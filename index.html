@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Programming Cheatsheet</title>
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Fragment+Mono:ital@0;1&family=Fredericka+the+Great&family=Overlock&family=Playfair+Display&family=Poiret+One&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body>
+
+      <header></header>
+
+
+      <main>
+        
+        <!-- HTML -->
+
+        <section>
+
+          <h2>HTML</h2>
+
+          <article>
+            <div id="lesson1">
+              <h3>Lesson 1</h3>
+              <aside class="note">*required</aside>
+            </div>
+
+            <table class="lesson">
+              <thead>
+                <tr class="sizer">
+                  <td class="minCol"></td>
+                  <td class="minCol"></td>
+                  <td class="minCol"></td>
+                  <td class="minCol"></td>
+                  <td class="minCol"></td>
+                  <td class="midCol"></td>
+                  <td class="maxCol"></td>
+                  <td></td>
+                </tr>
+              </thead>              
+              
+
+              <!-- PARENT -->
+              <tbody class="orange">
+                <tr class="info">
+                  <td class="icon" colspan="2">︽</td>
+                  <td class="name" colspan="4">Embedded Media</td>
+                  <td class="descrip" colspan="2">Various tags may be used for incorporating media into the webpage</td>
+                </tr>
+                <tr>
+                  <td class="drop"></td>
+                  <td class="nested" colspan="7">
+                    <table>
+                      <thead>
+                        <tr class="sizer">
+                          <td class="minCol"></td>
+                          <td class="minCol"></td>
+                          <td class="minCol"></td>
+                          <td class="minCol"></td>
+                          <td class="midCol"></td>
+                          <td class="maxCol"></td>
+                          <td></td>
+                        </tr>
+                      </thead>
+                      
+                      <!-- CHILD -->
+                      <tbody class="orange">
+                        <tr>
+                          <td class="spacer"></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="icon" colspan="2">︽</td>
+                          <td class="name" colspan="3">Anchor</td>
+                          <td class="descrip" colspan="2">Turns an element into a hyperlink</td>
+                        </tr>
+                        <tr>
+                          <td class="drop"></td>
+                          <td class="nested" colspan="6">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <td class="num-line" colspan="2" rowspan="2">1</td>
+                                  <td class="code-box" colspan="3" rowspan="2">&lt;a href=”url.com”&gt;link&lt;/a&gt;</td>
+                                  <td class="output-head">output</td>
+                                </tr>
+                                <tr>
+                                  <td class="output">result</td>
+                                </tr>
+                                <tr class="sizer">
+                                  <td class="minCol"></td>
+                                  <td class="minCol"></td>
+                                  <td class="minCol"></td>
+                                  <td class="midCol"></td>
+                                  <td class="maxCol"></td>
+                                  <td></td>
+                                </tr>
+                              </thead>
+
+                              <!-- GRANDCHILD -->
+                              <tbody class="green">
+                                <tr>
+                                  <td class="spacer"></td>
+                                </tr>
+                                <tr class="info">
+                                  <td class="icon" colspan="2">︽</td>
+                                  <td class="name" colspan="2">Hyperlink Reference*</td>
+                                  <td class="descrip" colspan="2">The path of the location to be used</td>
+                                </tr>
+                                <tr>
+                                  <td class="drop"></td>
+                                  <td class="nested" colspan="5">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <td class="num-line" colspan="2" rowspan="2">1</td>
+                                          <td class="code-box" colspan="2" rowspan="2">href=”url.com”</td>
+                                          <td class="output-head">output</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="output">result</td>
+                                        </tr>
+                                        <tr class="sizer">
+                                          <td class="minCol"></td>
+                                          <td class="minCol"></td>
+                                          <td class="midCol"></td>
+                                          <td class="maxCol"></td>
+                                          <td></td>
+                                        </tr>
+                                      </thead>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+
+                              <!-- GRANDCHILD -->
+                              <tbody class="pink">
+                                <tr>
+                                  <td class="spacer"></td>
+                                </tr>
+                                <tr class="info">
+                                  <td class="icon" colspan="2">︽</td>
+                                  <td class="name" colspan="2">Same Page Navigation</td>
+                                  <td class="descrip" colspan="2">Sets the location to an id located elsewhere on the page</td>
+                                </tr>
+                                <tr>
+                                  <td class="drop"></td>
+                                  <td class="nested" colspan="5">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <td class="num-line" colspan="2" rowspan="2">1</td>
+                                          <td class="code-box" colspan="2" rowspan="2">href=”#idName”</td>
+                                          <td class="output-head">output</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="output">result</td>
+                                        </tr>
+                                        <tr class="sizer">
+                                          <td class="minCol"></td>
+                                          <td class="minCol"></td>
+                                          <td class="midCol"></td>
+                                          <td class="maxCol"></td>
+                                          <td></td>
+                                        </tr>
+                                      </thead>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+
+                      <!-- CHILD -->
+                      <tbody class="orange">
+                        <tr>
+                          <td class="spacer"></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="icon" colspan="2">︽</td>
+                          <td class="name" colspan="3">Image</td>
+                          <td class="descrip" colspan="2">Displays an image</td>
+                        </tr>
+                        <tr>
+                          <td class="drop"></td>
+                          <td class="nested" colspan="6">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <td class="num-line" colspan="2" rowspan="2">1</td>
+                                  <td class="code-box" colspan="3" rowspan="2">&lt;img src=”fileName.png” alt=”description text”/&gt;</td>
+                                  <td class="output-head">output</td>
+                                </tr>
+                                <tr>
+                                  <td class="output">result</td>
+                                </tr>
+                                <tr class="sizer">
+                                  <td class="minCol"></td>
+                                  <td class="minCol"></td>
+                                  <td class="minCol"></td>
+                                  <td class="midCol"></td>
+                                  <td class="maxCol"></td>
+                                  <td></td>
+                                </tr>
+                              </thead>
+
+                              <!-- GRANDCHILD -->
+                              <tbody class="green">
+                                <tr>
+                                  <td class="spacer"></td>
+                                </tr>
+                                <tr class="info">
+                                  <td class="icon" colspan="2">︽</td>
+                                  <td class="name" colspan="2">Alternate Text</td>
+                                  <td class="descrip" colspan="2">Text displayed if an image is unable to be displayed. This is read aloud by screen readers</td>
+                                </tr>
+                                <tr>
+                                  <td class="drop"></td>
+                                  <td class="nested" colspan="5">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <td class="num-line" colspan="2" rowspan="2">1</td>
+                                          <td class="code-box" colspan="2" rowspan="2">alt=”description text”</td>
+                                          <td class="output-head">output</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="output">result</td>
+                                        </tr>
+                                        <tr class="sizer">
+                                          <td class="minCol"></td>
+                                          <td class="minCol"></td>
+                                          <td class="midCol"></td>
+                                          <td class="maxCol"></td>
+                                          <td></td>
+                                        </tr>
+                                      </thead>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>                
+                <tr>
+                  <td class="spacer"></td>
+                </tr>
+              </tbody>
+
+
+              <!-- EXPANDED ENTRY -->
+              <tbody class="pink">
+                <tr class="info">
+                  <td class="icon" colspan="2">︽</td>
+                  <td class="name" colspan="4">Expanded Entry</td>
+                  <td class="descrip" colspan="2">Contains the content of a table cell. The amount of table data elements within each row determines the number of columns the table contains</td>
+                </tr>
+                <tr>
+                  <td class="drop"></td>
+                  <td class="nested" colspan="7">
+                    <table>
+                      <thead>
+                        <tr>
+                          <td class="num-line" colspan="2" rowspan="2">1</td>
+                          <td class="code-box" colspan="4" rowspan="2">code</td>
+                          <td class="output-head">output</td>
+                        </tr>
+                        <tr>
+                          <td class="output">result</td>
+                        </tr>
+                        <tr class="sizer">
+                          <td class="minCol"></td>
+                          <td class="minCol"></td>
+                          <td class="minCol"></td>
+                          <td class="minCol"></td>
+                          <td class="midCol"></td>
+                          <td class="maxCol"></td>
+                          <td></td>
+                        </tr>
+                      </thead>
+                    </table>
+                  </td>
+                </tr>                
+                <tr>
+                  <td class="spacer"></td>
+                </tr>
+              </tbody>
+                  
+
+              <!-- COLLAPSED -->
+              <tbody class="orange">
+                <tr class="info">
+                  <td class="icon" colspan="2">︾</td>
+                  <td class="name" colspan="4">Collapsed Entry</td>
+                  <td class="descrip" colspan="2">Description</td>
+                </tr>
+                <tr>
+                  <td class="spacer"></td>
+                </tr>
+              </tbody>
+                
+
+              <!-- STANDALONE -->
+              <tbody class="green">
+                <tr class="info">
+                  <td class="icon" colspan="2">◉</td>
+                  <td class="name" colspan="4">Standalone Entry</td>
+                  <td class="descrip" colspan="2">Description</td>
+                </tr>
+              </tbody>
+
+
+              <tfoot>
+                <td class="col1"></td>
+                <td class="col2"></td>
+                <td class="col3"></td>
+                <td class="col4"></td>
+                <td class="col5"></td>
+                <td class="col6"></td>
+                <td class="col7"></td>
+                <td class="col8"></td>
+              </tfoot>
+            </table>
+          </article>
+
+
+
+          <!-- Lesson 2 -->
+          <article>
+            <div id="lesson2">
+              <h3>Lesson 2</h3>
+              <aside class="note">*required</aside>
+            </div>
+          </article>
+
+        </section>
+
+
+        <!-- CSS -->
+
+        <section>
+          <h2>CSS</h2>
+
+          <article>
+            <div id="lesson3">
+              <h3>Lesson 3</h3>
+              <aside class="note">*required</aside>
+            </div>
+          </article>
+          
+        </section>
+
+      </main>
+
+
+      <footer>
+        <h1>Programming Cheatsheet</h1>
+        <nav>
+          <ul>
+            <li><a class="current">home</a></li>
+            <li><a href="">html</a></li>
+            <li><a href="">css</a></li>
+            <li><a href="">javascript</a></li>
+            <li><a href="">about</a></li>
+          </ul>
+        </nav>
+        <aside id="left">░</aside>
+        <aside id="right">░</aside>
+      </footer>
+
+  </body>
+</html>

@@ -1,0 +1,239 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+
+
+/* Sizing */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.lesson {
+    margin: 0 auto;
+    width: 960px;
+    border-spacing: 0;
+}
+
+.nested table {
+    width: 100%;
+    height: 100%;
+    border-spacing: 0;
+}
+
+.minCol {
+    width: 25px;
+}
+
+.midCol {
+    width: 250px;
+}
+
+.maxCol {
+    width: 250px;
+}
+
+.spacer {
+    height: 5px;
+}
+
+
+
+/* General Styles */
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 100;
+    background-color: #110f10;
+    box-shadow: 0px 0px 6px #000;
+    border-top: 4px #E2DCDD ridge;
+}
+
+nav {
+    position: absolute;
+    float: right;
+    right: 20px;
+    bottom: 0px;
+}
+
+nav li {
+    font-family: 'overlock';
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color:#689D81;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFF;
+}
+
+nav .current,
+nav .current:hover {
+    color: #F0A56C;
+}
+
+h1 {
+    margin-left: 15px;
+    color: #F0A56C;
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 0px;
+    font-family: 'Fredericka the Great';
+    display: inline-block;
+    padding: 2px;
+}
+
+footer aside {
+    color: #BC6B79;
+    font-size: 33.5px;
+    font-family: 'Fredericka the Great';
+    position: absoulte;
+}
+
+#left {    
+    float: left;
+    margin-left: 1px;
+}
+
+#right {
+    float: right;
+    margin-right: 1px;
+}
+
+h2 {
+    color: #BC6B79;
+    font-size: 30px;
+    font-family: 'Bad Script';
+}
+
+h3 {
+    color: #689D81;
+    font-size: 25px;
+    font-family: 'Playfair Display';
+}
+
+.note {
+    color: #4D4246;
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: 'Fredericka the Great';
+}
+
+
+
+/* Main Info */
+.icon {
+    color: #FFF;
+    font-size: 20px;
+    vertical-align: bottom;
+    padding-bottom: 8px;
+    padding-left: 14.5px;
+    border-bottom: 2px #4D4246 solid;
+}
+
+.name {
+    color: #312B2D;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'overlock';
+    letter-spacing: 1.5px;
+    text-align: right;
+    border-right: 1.5px #635456 dotted;
+    border-bottom: 2px #4D4246 solid;
+    padding: 10px;
+}
+
+.orange .icon,
+.orange .name {
+    background-color: #F0A56C;
+}
+
+.green .icon,
+.green .name {
+    background-color: #689D81;
+}
+
+.pink .icon,
+.pink .name {
+    background-color: #BC6B79;
+}
+
+.descrip {
+    color: #635456;
+    background-color: #E2DCDD;
+    font-size: 12px;
+    font-family: 'poirot one';
+    letter-spacing: .3px;
+    text-align: left;
+    border-right: 1.5px #4D4246 solid;
+    border-bottom: 2px #4D4246 solid;
+    padding: 10px;
+}
+
+
+
+/* Drop Lines */
+.orange .drop {
+    border-left: 1px #F0A56C dashed;
+}
+
+.green .drop {
+    border-left: 1px #689D81 dashed;
+}
+
+.pink .drop {
+    border-left: 1px #BC6B79 dashed;
+}
+
+
+
+/* Code Examples */
+.num-line {
+    color: #635456;
+    background-color: #110E0F;
+    font-size: 12px;
+    font-family: 'Fragment Mono';
+    padding: 10px 5px;
+    text-align: right;
+    vertical-align: top;
+    border-bottom: 3px #312B2D solid;
+}
+
+.code-box {
+    color: #E2DCDD;
+    background-color: #161314;
+    font-size: 12px;
+    font-family: 'Fragment Mono';
+    vertical-align: top;
+    padding: 10px 5px;
+    border-right: 2.5px #4D4246 solid;
+    border-bottom: 3px #312B2D solid;
+}
+
+.output-head {
+    color: #E2DCDD;
+    background-color: #4D4246;
+    font-size: 15px;
+    font-family: 'Fragment Mono';
+    text-align: center;
+    vertical-align: bottom;
+    border-right: 1.5px #4D4246 solid;
+    padding: 5px;
+}
+
+.output {
+    color: #000;
+    background-color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    border-right: 1px #4D4246 dashed;
+    border-bottom: 1px #4D4246 dashed;
+    padding: 7.5px;
+}
