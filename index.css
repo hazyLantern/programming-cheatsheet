@@ -10,6 +10,9 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background-color: #E2DCDD;
+    background-image: linear-gradient(180deg, #110e0f, #352c2a, #77685d);
+    background-attachment: fixed;
 }
 
 .lesson {
@@ -47,50 +50,57 @@ footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    height: 46px
+    height: 46px;
     z-index: 100;
-    background-color: #110f10;
     box-shadow: 0px 0px 6px #000;
     border-top: 4px #E2DCDD ridge;
+    background-color: #110E0F;
+    background-image: linear-gradient(0deg, #110E0F, 70%, #1f1a1c);
 }
 
 nav {
     position: absolute;
-    float: right;
-    right: 35px;
+    float: left;
+    left: 25px;
     bottom: 0px;
 }
 
 nav li {
-    font-family: 'overlock';
     display: inline;
-    margin-right: 25px;
 }
 
 nav a {
+    font-size: 12px;
+    margin-right: 20px;
+    font-weight: 600;
+    line-height: 5px;
+    font-family: overlock;
+    letter-spacing: 2px;
     color:#689D81;
     text-decoration: none;
 }
 
 nav a:hover {
     color: #FFF;
+    text-shadow: 0 0 5px #c9bbbd;
+    line-height: 5px;
 }
 
-nav .current,
-nav .current:hover {
+nav .home {
     color: #F0A56C;
 }
 
 h1 {    
     position: absolute;
-    float: left;
-    left: 50px;
-    bottom: 3px;
+    float: right;
+    right: 60px;
+    bottom: 6%;
     color: #F0A56C;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: lighter;
     line-height: 0px;
-    font-family: 'Fredericka the Great';
+    letter-spacing: 2px;
+    font-family: 'fredericka the great';
 }
 
 footer img {
@@ -107,21 +117,24 @@ footer img {
 
 h2 {
     color: #BC6B79;
-    font-size: 30px;
-    font-family: 'Bad Script';
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-family: overlock;
 }
 
 h3 {
     color: #689D81;
-    font-size: 25px;
-    font-family: 'Playfair Display';
+    font-size: 24px;
+    font-weight: 600;
+    font-family: quicksand;
 }
 
 .note {
     color: #4D4246;
-    font-size: 13px;
-    font-weight: lighter;
-    font-family: 'Fredericka the Great';
+    font-size: 14px;
+    font-weight: 300;
+    font-family: overlock;
 }
 
 
@@ -129,7 +142,7 @@ h3 {
 /* Main Info */
 .icon {
     color: #FFF;
-    font-size: 20px;
+    font-size: 18px;
     vertical-align: bottom;
     padding-bottom: 8px;
     padding-left: 14.5px;
@@ -138,9 +151,9 @@ h3 {
 
 .name {
     color: #312B2D;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'overlock';
+    font-size: 18px;
+    font-weight: 700;
+    font-family: overlock;
     letter-spacing: 1.5px;
     text-align: right;
     border-right: 1.5px #635456 dotted;
@@ -167,7 +180,8 @@ h3 {
     color: #635456;
     background-color: #E2DCDD;
     font-size: 12px;
-    font-family: 'poirot one';
+    font-weight: 600;
+    font-family: quicksand;
     letter-spacing: .3px;
     text-align: left;
     border-right: 1.5px #4D4246 solid;
@@ -197,7 +211,7 @@ h3 {
     color: #635456;
     background-color: #110E0F;
     font-size: 12px;
-    font-family: 'Fragment Mono';
+    font-family: 'pt mono';
     padding: 10px 5px;
     text-align: right;
     vertical-align: top;
@@ -208,7 +222,7 @@ h3 {
     color: #E2DCDD;
     background-color: #161314;
     font-size: 12px;
-    font-family: 'Fragment Mono';
+    font-family: 'fragment mono';
     vertical-align: top;
     padding: 10px 5px;
     border-right: 2.5px #4D4246 solid;
@@ -218,8 +232,10 @@ h3 {
 .output-head {
     color: #E2DCDD;
     background-color: #4D4246;
-    font-size: 15px;
-    font-family: 'Fragment Mono';
+    font-size: 14px;
+    font-weight: 500;
+    font-family: quicksand;
+    letter-spacing: 3px;
     text-align: center;
     vertical-align: bottom;
     border-right: 1.5px #4D4246 solid;
