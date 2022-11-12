@@ -80,15 +80,16 @@ nav .current:hover {
     color: #F0A56C;
 }
 
-h1 {
-    margin-left: 18px;
+h1 {    
+    position: absolute;
+    float: left;
+    left: 35px;
+    bottom: 0px;
     color: #F0A56C;
-    font-size: 23px;
+    font-size: 25px;
     font-weight: lighter;
     line-height: 0px;
     font-family: 'Fredericka the Great';
-    display: inline-block;
-    padding: 1px;
 }
 
 footer img {
