@@ -63,7 +63,7 @@ nav {
 nav li {
     font-family: 'overlock';
     display: inline;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 nav a {
@@ -81,9 +81,9 @@ nav .current:hover {
 }
 
 h1 {
-    margin-left: 15px;
+    margin-left: 18px;
     color: #F0A56C;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: lighter;
     line-height: 0px;
     font-family: 'Fredericka the Great';
