@@ -56,7 +56,7 @@ footer {
 nav {
     position: absolute;
     float: right;
-    right: 20px;
+    right: 35px;
     bottom: 0px;
 }
 
@@ -88,24 +88,19 @@ h1 {
     line-height: 0px;
     font-family: 'Fredericka the Great';
     display: inline-block;
-    padding: 2px;
+    padding: 1px;
 }
 
-footer aside {
-    color: #BC6B79;
-    font-size: 33.5px;
-    font-family: 'Fredericka the Great';
+footer img {
     position: absoulte;
 }
 
 #left {    
     float: left;
-    margin-left: 1px;
 }
 
 #right {
     float: right;
-    margin-right: 1px;
 }
 
 h2 {
