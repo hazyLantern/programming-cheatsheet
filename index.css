@@ -5,118 +5,44 @@
 
 
 
-/* Sizing */
+
+/* Box */
 html,
 body {
     margin: 0;
     padding: 0;
-    background-color: #E2DCDD;
-    background-image: linear-gradient(180deg, #110e0f, #352c2a, #77685d);
-    background-attachment: fixed;
 }
 
 .lesson {
-    margin: 0 auto;
     width: 960px;
-    border-spacing: 0;
 }
 
-.nested table {
-    width: 100%;
-    height: 100%;
-    border-spacing: 0;
-}
-
-.minCol {
-    width: 25px;
-}
-
-.midCol {
-    width: 250px;
-}
-
-.maxCol {
-    width: 250px;
-}
-
-.spacer {
-    height: 5px;
-}
+    /* List */
 
 
 
-/* General Styles */
-footer {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    height: 46px;
-    z-index: 100;
-    box-shadow: 0px 0px 6px #000;
-    border-top: 4px #E2DCDD ridge;
-    background-color: #110E0F;
-    background-image: linear-gradient(0deg, #110E0F, 70%, #1f1a1c);
-}
 
-nav {
-    position: absolute;
-    float: left;
-    left: 25px;
-    bottom: 0px;
-}
 
-nav li {
-    display: inline;
-}
 
-nav a {
-    font-size: 12px;
-    margin-right: 20px;
-    font-weight: 600;
-    line-height: 5px;
-    font-family: overlock;
-    letter-spacing: 2px;
-    color:#689D81;
-    text-decoration: none;
-}
+/* Border */
+    /* List */
+    .orange .drop {
+        border-left: 1px #F0A56C dashed;
+    }
 
-nav a:hover {
-    color: #FFF;
-    text-shadow: 0 0 5px #c9bbbd;
-    line-height: 5px;
-}
+    .green .drop {
+        border-left: 1px #689D81 dashed;
+    }
 
-nav .home {
-    color: #F0A56C;
-}
+    .pink .drop {
+        border-left: 1px #BC6B79 dashed;
+    }
 
-h1 {    
-    position: absolute;
-    float: right;
-    right: 60px;
-    bottom: 10%;
-    color: #F0A56C;
-    font-size: 24px;
-    font-weight: lighter;
-    line-height: 0px;
-    letter-spacing: 2px;
-    font-family: 'fredericka the great';
-}
 
-footer img {
-    position: absoulte;
-}
 
-#left {    
-    float: left;
-}
 
-#right {
-    float: right;
-}
-
+/* Font */
 h2 {
-    color: #BC6B79;
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 4px;
@@ -124,129 +50,234 @@ h2 {
 }
 
 h3 {
-    color: #689D81;
     font-size: 24px;
     font-weight: 600;
     font-family: quicksand;
 }
 
 .note {
-    color: #4D4246;
     font-size: 14px;
     font-weight: 300;
     font-family: overlock;
 }
 
+    /* List */
+    .icon {
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: overlock;
+        letter-spacing: 1.5px;
+        text-align: right;
+    }
+
+    .descrip {
+        font-size: 12px;
+        font-weight: 600;
+        font-family: quicksand;
+        letter-spacing: .3px;
+        text-align: left;
+    }
+
+    .numline {
+        font-size: 12px;
+        font-family: 'pt mono';
+        text-align: right;
+    }
+
+    .code .body {
+        font-size: 12px;
+        font-family: 'fragment mono';
+    }
+
+    .output h5 {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: quicksand;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    .result {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
 
-/* Main Info */
-.icon {
-    color: #FFF;
-    font-size: 18px;
-    vertical-align: bottom;
-    padding-bottom: 8px;
-    padding-left: 14.5px;
-    border-bottom: 2px #4D4246 solid;
-}
 
-.name {
-    color: #312B2D;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: overlock;
-    letter-spacing: 1.5px;
-    text-align: right;
-    border-right: 1.5px #635456 dotted;
-    border-bottom: 2px #4D4246 solid;
-    padding: 10px;
-}
 
-.orange .icon,
-.orange .name {
-    background-color: #F0A56C;
-}
-
-.green .icon,
-.green .name {
-    background-color: #689D81;
-}
-
-.pink .icon,
-.pink .name {
-    background-color: #BC6B79;
-}
-
-.descrip {
-    color: #635456;
+/* Color 
+#110E0F #161314 #312B2D #4D4246 #635456 #689D81 #BC6B79 #F0A56C #E2DCDD */
+html,
+body {
     background-color: #E2DCDD;
-    font-size: 12px;
-    font-weight: 600;
-    font-family: quicksand;
-    letter-spacing: .3px;
-    text-align: left;
-    border-right: 1.5px #4D4246 solid;
-    border-bottom: 2px #4D4246 solid;
-    padding: 10px;
+    background-image: linear-gradient(180deg, #110e0f, #352c2a, #77685d);
+    background-attachment: fixed;
 }
 
-
-
-/* Drop Lines */
-.orange .drop {
-    border-left: 1px #F0A56C dashed;
+h2 {
+    color: #BC6B79;
 }
 
-.green .drop {
-    border-left: 1px #689D81 dashed;
+h3 {
+    color: #689D81;
 }
 
-.pink .drop {
-    border-left: 1px #BC6B79 dashed;
+.note {
+    color: #4D4246;
 }
 
+    /* List */
+    .icon {
+        color: #FFF;
+    }
+
+    .name {
+        color: #312B2D;
+    }
+
+    .orange .icon,
+    .orange h4 {
+        background-color: #F0A56C;
+    }
+
+    .green .icon,
+    .green h4 {
+        background-color: #689D81;
+    }
+
+    .pink .icon,
+    .pink h4 {
+        background-color: #BC6B79;
+    }
+
+    .descrip {
+        color: #635456;
+        background-color: #E2DCDD;
+    }
+
+    .numline {
+        color: #635456;
+        background-color: #110E0F;
+    }
+
+    .code .body {
+        color: #E2DCDD;
+        background-color: #161314;
+    }
+
+    .output h5 {
+        color: #E2DCDD;
+        background-color: #4D4246;
+    }
+
+    .result {
+        color: #000;
+        background-color: #FFF;
+    }
 
 
-/* Code Examples */
-.num-line {
-    color: #635456;
-    background-color: #110E0F;
-    font-size: 12px;
-    font-family: 'pt mono';
-    padding: 10px 5px;
-    text-align: right;
-    vertical-align: top;
-    border-bottom: 3px #312B2D solid;
-}
 
-.code-box {
-    color: #E2DCDD;
-    background-color: #161314;
-    font-size: 12px;
-    font-family: 'fragment mono';
-    vertical-align: top;
-    padding: 10px 5px;
-    border-right: 2.5px #4D4246 solid;
-    border-bottom: 3px #312B2D solid;
-}
 
-.output-head {
-    color: #E2DCDD;
-    background-color: #4D4246;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: quicksand;
-    letter-spacing: 3px;
-    text-align: center;
-    vertical-align: bottom;
-    border-right: 1.5px #4D4246 solid;
-    padding: 5px;
-}
+/* Footer */
+    footer {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 46px;
+        z-index: 100;
+    }
 
-.output {
-    color: #000;
-    background-color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
-    border-right: 1px #4D4246 dashed;
-    border-bottom: 1px #4D4246 dashed;
-    padding: 7.5px;
-}
+    nav {
+        position: absolute;
+        float: left;
+        left: 25px;
+        bottom: 0px;
+    }
+
+    nav li {
+        display: inline;
+    }
+
+    nav a {
+        margin-right: 20px;
+    }
+
+    h1 {    
+        position: absolute;
+        float: right;
+        right: 60px;
+        bottom: 10%;
+    }
+
+    footer img {
+        position: absoulte;
+    }
+
+    #left {    
+        float: left;
+    }
+
+    #right {
+        float: right;
+    }
+
+    /* Footer Border */
+    footer {
+        border-top: 4px #E2DCDD ridge;
+    }
+
+    /* Footer Fonts */
+    nav a {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 5px;
+        font-family: overlock;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        line-height: 5px;
+    }
+
+    h1 {    
+        font-size: 24px;
+        font-weight: lighter;
+        line-height: 0px;
+        letter-spacing: 2px;
+        font-family: 'fredericka the great';
+    }
+
+    /* Footer Color */
+    footer {
+        background-color: #110E0F;
+        background-image: linear-gradient(0deg, #110E0F, 70%, #1f1a1c);
+    }
+
+    nav a {
+        color:#689D81;
+    }
+
+    nav a:hover {
+        color: #FFF;
+    }
+
+    nav .home {
+        color: #F0A56C;
+    }
+
+    h1 {    
+        color: #F0A56C;
+    }
+
+    /* Footer Effects */
+    footer {
+        box-shadow: 0px 0px 6px #000;
+    }
+
+    nav a:hover {
+        text-shadow: 0 0 5px #c9bbbd;
+    }
