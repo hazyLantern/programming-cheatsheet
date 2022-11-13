@@ -7,23 +7,33 @@
 
 html,
 body {
-    margin: 0;
     padding: 0;
+    margin: 0;
         background-color: #E2DCDD;
         background-image: linear-gradient(180deg, #110e0f, #352c2a, #77685d);
         background-attachment: fixed;
     }
 
-    h2 {
-        font-family: overlock;
-        font-weight: 700;
-        font-size: 48px;
-        letter-spacing: 4px;
-            color: #BC6B79;
+    header {
+        position: relative;
+        width: 960px;
+        height: 100px;
+        margin: 0 auto;
+        top: -40px;
+            background-color: #E2DCDD;
     }
 
+        h2 {
+            font-family: overlock;
+            font-weight: 700;
+            font-size: 48px;
+            letter-spacing: 4px;
+                color: #BC6B79;
+        }
+
     .lesson {
-        width: 960px;
+        margin: 20px auto;
+        width: 940px;
     }
 
         h3 {
@@ -128,10 +138,10 @@ body {
 /* Footer --------------------------------------------------------------------------------------------------- */
 footer {
     position: fixed;
-    bottom: 0px;
+    z-index: 100;
     width: 100%;
     height: 46px;
-    z-index: 100;
+    bottom: 0px;
         border-top: 4px #E2DCDD ridge;
             background-color: #110E0F;
             background-image: linear-gradient(0deg, #110E0F, 70%, #1f1a1c);
