@@ -32,22 +32,26 @@ body {
         }
 
     .lesson {
-        margin: 20px auto;
+        margin: 0px auto;
         width: 940px;
     }
 
         h3 {
+            display: inline-block;
             font-family: quicksand;
             font-weight: 600;
             font-size: 24px;
+            line-height: 0px;
                 color: #689D81;
         }
 
         .note {
-            font-family: overlock;
-            font-weight: 300;
-            font-size: 14px;
-                color: #4D4246;
+            display: inline-block;
+                text-align: right;
+                font-family: overlock;
+                font-weight: 300;
+                font-size: 14px;
+                    color: #4D4246;
         }
 
 
