@@ -1,6 +1,5 @@
-/* Box Border Font Color Effect
-#110E0F #161314 #312B2D #4D4246 #635456 #689D81 #BC6B79 #F0A56C #E2DCDD*/
 * {
+    border: 1px #000 solid;
     box-sizing: border-box;
         font-family: monospace;
 }
@@ -9,9 +8,9 @@ html,
 body {
     padding: 0;
     margin: 0;
-        background-color: #E2DCDD;
+        /*background-color: #77685d;
         background-image: linear-gradient(180deg, #110e0f, #352c2a, #77685d);
-        background-attachment: fixed;
+        background-attachment: fixed;*/
     }
 
     header {
@@ -20,15 +19,15 @@ body {
         height: 100px;
         margin: 0 auto;
         top: -40px;
-            background-color: #E2DCDD;
+            /*background-color: #E2DCDD;*/
     }
 
         h2 {
-            font-family: overlock;
+            /*font-family: overlock;
             font-weight: 700;
             font-size: 48px;
             letter-spacing: 4px;
-                color: #BC6B79;
+                color: #BC6B79;*/
         }
 
     .lesson {
@@ -38,20 +37,23 @@ body {
 
         h3 {
             display: inline-block;
-            font-family: quicksand;
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 0px;
-                color: #689D81;
+            width: 860px;
+            margin-left: 10px;
+                /*font-family: quicksand;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 0px;
+                    color: #689D81;*/
         }
 
         .note {
             display: inline-block;
-                text-align: right;
+            margin-right: 10px;
+                /*text-align: right;
                 font-family: overlock;
                 font-weight: 300;
                 font-size: 14px;
-                    color: #4D4246;
+                    color: #4D4246;*/
         }
 
 
@@ -59,81 +61,81 @@ body {
 
 /* List --------------------------------------------------------------------------------------------------- */
 .orange {
-    border-left: 1px #F0A56C dashed;
+    /*border-left: 1px #F0A56C dashed;*/
 }
 
 .green {
-    border-left: 1px #689D81 dashed;
+    /*border-left: 1px #689D81 dashed;*/
 }
 
 .pink {
-    border-left: 1px #BC6B79 dashed;
+    /*border-left: 1px #BC6B79 dashed;*/
 }
 
     .icon {
-        font-size: 18px;
-            color: #FFF;
+        /*font-size: 18px;
+            color: #FFF;*/
     }
 
     .name {
-        text-align: right;
+        /*text-align: right;
         font-family: overlock;
         font-weight: 700;
         font-size: 18px;
         letter-spacing: 1.5px;
-            color: #312B2D;
+            color: #312B2D;*/
     }
 
         .orange h4 {
-            background-color: #F0A56C;
+            /*background-color: #F0A56C;*/
         }
 
         .green h4 {
-            background-color: #689D81;
+            /*background-color: #689D81;*/
         }
 
         .pink h4 {
-            background-color: #BC6B79;
+            /*background-color: #BC6B79;*/
         }
 
             .descrip {
-                font-family: quicksand;
+                /*font-family: quicksand;
                 font-weight: 600;
                 font-size: 12px;
                 letter-spacing: .3px;
                     color: #635456;
-                    background-color: #E2DCDD;
+                    background-color: #E2DCDD;*/
             }
 
             .numline {
-                text-align: right;
+                /*text-align: right;
                 font-family: 'pt mono';
                 font-size: 12px;
                     color: #635456;
-                    background-color: #110E0F;
+                    background-color: #110E0F;*/
             }
 
             .code .body {
-                font-family: 'fragment mono';
+                /*font-family: 'fragment mono';
                 font-size: 12px;
                     color: #E2DCDD;
-                    background-color: #161314;
+                    background-color: #161314;*/
             }
 
             .output h5 {
-                text-align: center;
+                /*text-align: center;
                 font-family: quicksand;
                 font-weight: 500;
                 font-size: 14px;
                 letter-spacing: 3px;
                     color: #E2DCDD;
-                    background-color: #4D4246;
+                    background-color: #4D4246;*/
             }
 
             .result {
-                font-family: Arial, Helvetica, sans-serif;
+                /*font-family: Arial, Helvetica, sans-serif;
                     color: #000;
-                    background-color: #FFF;
+                    background-color: #FFF;*/
             }
 
 
@@ -146,10 +148,10 @@ footer {
     width: 100%;
     height: 46px;
     bottom: 0px;
-        border-top: 4px #E2DCDD ridge;
-            background-color: #110E0F;
-            background-image: linear-gradient(0deg, #110E0F, 70%, #1f1a1c);
-                box-shadow: 0px 0px 6px #000;
+        /*background-color: #110E0F;
+        background-image: linear-gradient(0deg, #110E0F, 70%, #1f1a1c);
+                border-top: 4px #E2DCDD ridge;
+                    box-shadow: 0px 0px 6px #000;*/
 }
 
     h1 {    
@@ -157,12 +159,12 @@ footer {
         float: right;
         right: 60px;
         bottom: 10%;
-            font-family: 'fredericka the great';
+            /*font-family: 'fredericka the great';
             font-weight: lighter;
             font-size: 24px;
             letter-spacing: 2px;
             line-height: 0px;
-                color: #F0A56C;
+                color: #F0A56C;*/
     }
 
     nav {
@@ -178,18 +180,18 @@ footer {
 
             nav a {
                 margin-right: 20px;
-                    font-family: overlock;
+                    /*font-family: overlock;
                     font-weight: 600;
                     font-size: 12px;
                     letter-spacing: 2px;
                     line-height: 5px;
                     text-decoration: none;
-                        color:#689D81;
+                        color:#689D81;*/
             }
 
                 nav a:hover {
-                    color: #FFF;
-                        text-shadow: 0 0 5px #c9bbbd;
+                    /*color: #FFF;
+                        text-shadow: 0 0 5px #c9bbbd;*/
                 }
 
     footer img {
