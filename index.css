@@ -1,7 +1,5 @@
 * {
-    border: 1px #0002 solid;
     box-sizing: border-box;
-    background-color: #FFF;
         font-family: monospace;
 }
 
@@ -11,9 +9,9 @@ body {
     justify-content: center;
     padding: 0;
     margin: 0;
-        /*background-color: #77685d;
+        background-color: #77685d;
         background-image: linear-gradient(180deg, #110e0f, #352c2a, #77685d);
-        background-attachment: fixed;*/
+        background-attachment: fixed;
 }
 
 
@@ -29,7 +27,7 @@ header {
     position: fixed;
     top: 0px;
     z-index: 99;
-        /*background-color: #E2DCDD;*/
+        background-color: #312B2D;
 }
 
     h1 {
@@ -37,9 +35,9 @@ header {
             font-family: 'fredericka the great';
             font-size: 72px;
             font-weight: lighter;
-            line-height: 0;
+            line-height: 25px;
             letter-spacing: 10px;
-                /*color: #BC6B79;*/
+                color: #BC6B79;
     }
 
 
@@ -51,10 +49,10 @@ footer {
     position: fixed;
     bottom: 0px;
     z-index: 100;
-        /*background-color: #110E0F;
+        background-color: #110E0F;
         background-image: linear-gradient(0deg, #110E0F, 70%, #1f1a1c);
                 border-top: 4px #E2DCDD ridge;
-                    box-shadow: 0px 0px 6px #000;*/
+                    /*box-shadow: 0px 0px 6px #000;*/
 }
 
     .left {
@@ -86,12 +84,12 @@ footer {
                         font-size: 12px;
                         letter-spacing: 2px;
                         text-decoration: none;
-                            /*color:#689D81;*/
+                            color:#689D81;
                 }
                 
                     nav a:hover {
-                        /*color: #FFF;
-                            text-shadow: 0 0 5px #c9bbbd;*/
+                        color: #FFF;
+                            /*text-shadow: 0 0 5px #c9bbbd;*/
                     }
 
     .right {
@@ -112,7 +110,7 @@ footer {
                 font-weight: lighter;
                 font-size: 24px;
                 letter-spacing: 2px;
-                    /*color: #F0A56C;*/
+                    color: #F0A56C;
         }
 
 
@@ -123,10 +121,11 @@ main {
     width: 960px;
     position: relative;
     top: 115px;
+        background-color: #63545625;
 }
 
     .lesson {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
         .lesson hgroup {
@@ -135,22 +134,25 @@ main {
             align-items: flex-end;
             top: 120px;
             z-index: 98;
+                background-color: #4D4246;
         }
 
             h2 {
-                margin: 10px 20px;
+                margin: 3px 25px;
                     font-family: overlock;
                     font-size: 36px;
-                        /*color: #689D81;*/
+                    font-weight: lighter;
+                        color: #E2DCDDBB;
             }
 
             h6 {
-                margin: 10px 20px;
+                margin: 3px 25px;
                 margin-left: auto;
                     font-family: overlock;
                     font-size: 14px;
+                    font-weight: lighter;
                     letter-spacing: 2px;
-                       /* color: #4D4246;*/
+                        color: #E2DCDDBB;
             }
 
         .list {
@@ -158,18 +160,22 @@ main {
             margin: 0 auto 10px;
         }
 
-            .orange { /*border-left: 1px #F0A56C dashed;*/ }
-            .green { /*border-left: 1px #689D81 dashed;*/ }
-            .pink { /*border-left: 1px #BC6B79 dashed;*/ }
+            .orange { border-right: 1px #F0A56C dashed; }
+            .green { border-right: 1px #689D81 dashed; }
+            .pink { border-right: 1px #BC6B79 dashed; }
 
             .entry {
                 display: flex;
                 flex-direction: row-reverse;
-                margin-bottom: 10px;
+                margin: 10px 0;
             }
 
                 .child { width: 900px; }                
                 .grandchild { width: 860px; }
+
+.spacer {
+    height: 20px;
+}
 
 
 
@@ -184,8 +190,11 @@ main {
     .heading {
         width: 100%;
         display: flex;
-
     }
+
+        .orange .heading { background-color: #F0A56C; }
+        .green .heading { background-color: #689D81; }
+        .pink .heading { background-color: #BC6B79; }
 
         .drop {
             width: 40px;
@@ -199,8 +208,7 @@ main {
                 font-family: overlock;
                 font-size: 24px;
                 letter-spacing: 1.5px;
-                    /*color: #312B2D;
-                    background-color: #inherit;*/
+                    color: #0009;
         }
 
     .descrip {
@@ -210,17 +218,26 @@ main {
         margin-right: 50px;
     }
 
-        .descrip p {
-            margin: 10px;
-                font-family: quicksand;
-                font-size: 12px;
-                letter-spacing: .3px;
-                    /*color: #635456;
-                    background-color: #E2DCDD;*/
+    .orange .descrip { background-color: #F0A56C; }
+    .green .descrip { background-color: #689D81; }
+    .pink .descrip { background-color: #BC6B79; }
+
+        .text {
+            box-sizing: border-box;
+                background-color: #0002;
         }
+
+            .descrip p {
+                margin: 10px;
+                    font-family: quicksand;
+                    font-size: 12px;
+                    letter-spacing: .3px;
+                        color: #E2DCDD;
+            }
 
         .links {
             height: 100%;
+            background-color: #FFFFFF30;
         }
 
             h5 {
@@ -229,6 +246,7 @@ main {
                     font-family: overlock;
                     font-size: 16px;
                     font-weight: bold;
+                    color: #000A;
             }
             
             .links ul {
@@ -238,6 +256,7 @@ main {
                     font-family: 'pt mono';
                     font-size: 10px;
                     letter-spacing: .5px;
+                        color: #0007;
             }
 
                 .links li {}
@@ -261,25 +280,26 @@ main {
             margin: 0;
                 font-family: 'pt mono';
                 font-size: 12px;
-                    /*color: #635456;
-                    background-color: #110E0F;*/
+                    background-color: #110E0F;
         }
 
             .code li {
-                    /*color: #E2DCDD;
-                    background-color: #161314;*/
+                    color: #E2DCDD;
+                    background-color: #161314;
             }
 
-    h4 {
+    .outHead {
         height: 45px;
+            background-color: #E2DCDD;
+    }
+
+    h4 {
         margin: 5px;
         margin-left: 25px;
-            font-family: overlock;
+            font-family: quicksand;
             font-size: 18px;
-            font-weight: lighter;
             letter-spacing: 3px;
-                /*color: #E2DCDD;
-                background-color: #4D4246;*/
+                color: #0007;
     }
 
     .output {
@@ -288,6 +308,6 @@ main {
         padding: 0 10px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
-                /*color: #000;
-                background-color: #FFF;*/
+                color: #000;
+                background-color: #FFF;
     }
