@@ -1,5 +1,5 @@
 * {
-    border: 1px #000 solid;
+    border: 1px #0002 solid;
     box-sizing: border-box;
     background-color: #FFF;
         font-family: monospace;
@@ -34,11 +34,12 @@ header {
 
     h1 {
         margin: 10;
-            /*font-family: overlock;
-            font-weight: 700;
-            font-size: 48px;
-            letter-spacing: 4px;
-                color: #BC6B79;*/
+            font-family: 'fredericka the great';
+            font-size: 72px;
+            font-weight: lighter;
+            line-height: 0;
+            letter-spacing: 10px;
+                /*color: #BC6B79;*/
     }
 
 
@@ -80,13 +81,12 @@ footer {
 
                 nav a {
                     margin-right: 20px;
-                        /*font-family: overlock;
-                        font-weight: 600;
+                        font-family: overlock;
+                        font-weight: bold;
                         font-size: 12px;
                         letter-spacing: 2px;
-                        line-height: 5px;
                         text-decoration: none;
-                            color:#689D81;*/
+                            /*color:#689D81;*/
                 }
                 
                     nav a:hover {
@@ -108,12 +108,11 @@ footer {
 
         footer h1 {
             margin: auto 0;
-                /*font-family: 'fredericka the great';
+                font-family: 'fredericka the great';
                 font-weight: lighter;
                 font-size: 24px;
                 letter-spacing: 2px;
-                line-height: 0px;
-                    color: #F0A56C;*/
+                    /*color: #F0A56C;*/
         }
 
 
@@ -139,22 +138,19 @@ main {
         }
 
             h2 {
-                margin: 10px;
-                    /*font-family: quicksand;
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 0px;
-                        color: #689D81;*/
+                margin: 10px 20px;
+                    font-family: overlock;
+                    font-size: 36px;
+                        /*color: #689D81;*/
             }
 
             h6 {
-                margin: 10px;
+                margin: 10px 20px;
                 margin-left: auto;
-                    /*text-align: right;
                     font-family: overlock;
-                    font-weight: 300;
                     font-size: 14px;
-                        color: #4D4246;*/
+                    letter-spacing: 2px;
+                       /* color: #4D4246;*/
             }
 
         .list {
@@ -162,19 +158,18 @@ main {
             margin: 0 auto 10px;
         }
 
-            .orange {/*border-left: 1px #F0A56C dashed;*/}
-            .green {/*border-left: 1px #689D81 dashed;*/}
-            .pink { /*border-left: 1px #BC6B79 dashed;*/}
+            .orange { /*border-left: 1px #F0A56C dashed;*/ }
+            .green { /*border-left: 1px #689D81 dashed;*/ }
+            .pink { /*border-left: 1px #BC6B79 dashed;*/ }
 
             .entry {
-                min-height: 140px;
                 display: flex;
                 flex-direction: row-reverse;
                 margin-bottom: 10px;
             }
 
-                .child {width: 900px;}                
-                .grandchild {width: 860px;}
+                .child { width: 900px; }                
+                .grandchild { width: 860px; }
 
 
 
@@ -193,20 +188,18 @@ main {
     }
 
         .drop {
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             margin: 5px;
         }
 
         h3 {
             margin: 10px;
             margin-left: 0;
-                /*text-align: right;
                 font-family: overlock;
-                font-weight: 700;
-                font-size: 18px;
+                font-size: 24px;
                 letter-spacing: 1.5px;
-                    color: #312B2D;
+                    /*color: #312B2D;
                     background-color: #inherit;*/
         }
 
@@ -219,11 +212,10 @@ main {
 
         .descrip p {
             margin: 10px;
-                /*font-family: quicksand;
-                font-weight: 600;
+                font-family: quicksand;
                 font-size: 12px;
                 letter-spacing: .3px;
-                    color: #635456;
+                    /*color: #635456;
                     background-color: #E2DCDD;*/
         }
 
@@ -234,12 +226,18 @@ main {
             h5 {
                 margin: 10px;
                 margin-bottom: 5px;
+                    font-family: overlock;
+                    font-size: 16px;
+                    font-weight: bold;
             }
             
             .links ul {
                 columns: 3;
                 margin: 10px;
                 margin-top: 0;
+                    font-family: 'pt mono';
+                    font-size: 10px;
+                    letter-spacing: .5px;
             }
 
                 .links li {}
@@ -261,29 +259,26 @@ main {
 
         .code ol {
             margin: 0;
-                /*text-align: right;
                 font-family: 'pt mono';
                 font-size: 12px;
-                    color: #635456;
+                    /*color: #635456;
                     background-color: #110E0F;*/
         }
 
             .code li {
-                /*font-family: 'fragment mono';
-                font-size: 12px;
-                color: #E2DCDD;
-                background-color: #161314;*/
+                    /*color: #E2DCDD;
+                    background-color: #161314;*/
             }
 
     h4 {
         height: 45px;
-        margin: 0;
-            /*text-align: center;
-            font-family: quicksand;
-            font-weight: 500;
-            font-size: 14px;
+        margin: 5px;
+        margin-left: 25px;
+            font-family: overlock;
+            font-size: 18px;
+            font-weight: lighter;
             letter-spacing: 3px;
-                color: #E2DCDD;
+                /*color: #E2DCDD;
                 background-color: #4D4246;*/
     }
 
@@ -291,7 +286,8 @@ main {
         height: 100%;
         margin: 0;
         padding: 0 10px;
-        /*font-family: Arial, Helvetica, sans-serif;
-            color: #000;
-            background-color: #FFF;*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+                /*color: #000;
+                background-color: #FFF;*/
     }
