@@ -28,6 +28,8 @@ header {
     top: 0px;
     z-index: 99;
         background-color: #312B2D;
+        /*background-image: url(./headerBk.jpg);
+        background-size: cover;*/
 }
 
     h1 {
@@ -120,13 +122,11 @@ footer {
 main {
     width: 960px;
     position: relative;
-    top: 115px;
+    top: 120px;
         background-color: #63545625;
 }
 
-    .lesson {
-        margin-bottom: 30px;
-    }
+    .lesson {}
 
         .lesson hgroup {
             display: flex;
@@ -135,6 +135,8 @@ main {
             top: 120px;
             z-index: 98;
                 background-color: #4D4246;
+                /*background-image: url(./headerBk.jpg);                
+                background-size: cover;*/
         }
 
             h2 {
@@ -157,7 +159,8 @@ main {
 
         .list {
             width: 940px;
-            margin: 0 auto 10px;
+            margin: 0 auto;
+            padding-bottom: 20px;
         }
 
             .orange { border-right: 1px #F0A56C dashed; }
@@ -174,7 +177,7 @@ main {
                 .grandchild { width: 860px; }
 
 .spacer {
-    height: 20px;
+    height: 19px;
 }
 
 
