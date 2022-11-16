@@ -1,7 +1,7 @@
 * {
     border: 1px #000 solid;
     box-sizing: border-box;
-    border-collapse: collapse;
+    background-color: #FFF;
         font-family: monospace;
 }
 
@@ -11,7 +11,6 @@ body {
     justify-content: center;
     padding: 0;
     margin: 0;
-            border: none;
         /*background-color: #77685d;
         background-image: linear-gradient(180deg, #110e0f, #352c2a, #77685d);
         background-attachment: fixed;*/
@@ -28,6 +27,7 @@ header {
     align-content: center;
     justify-content: center;
     position: fixed;
+    top: 0px;
     z-index: 99;
         /*background-color: #E2DCDD;*/
 }
@@ -123,7 +123,7 @@ footer {
 main {
     width: 960px;
     position: relative;
-    top: 120px;
+    top: 115px;
 }
 
     .lesson {
