@@ -9,8 +9,9 @@ body {
     justify-content: center;
     padding: 0;
     margin: 0;
-        background-color: #77685d;
-        background-image: linear-gradient(180deg, #110e0f, #352c2a, #77685d);
+    z-index: -2;
+        background-color: #784033;
+        background-image: linear-gradient(180deg, #0B0615, #784033, #dfb891);
         background-attachment: fixed;
 }
 
@@ -27,9 +28,9 @@ header {
     position: fixed;
     top: 0px;
     z-index: 99;
-        background-color: #312B2D;
-        /*background-image: url(./headerBk.jpg);
-        background-size: cover;*/
+        background-color: #39272a;
+        background-image: url(./headerBk.jpg);
+        background-size: cover;
 }
 
     h1 {
@@ -39,7 +40,7 @@ header {
             font-weight: lighter;
             line-height: 25px;
             letter-spacing: 10px;
-                color: #BC6B79;
+                color: #dfb891bb;
     }
 
 
@@ -51,9 +52,9 @@ footer {
     position: fixed;
     bottom: 0px;
     z-index: 100;
-        background-color: #110E0F;
-        background-image: linear-gradient(0deg, #110E0F, 70%, #1f1a1c);
-                border-top: 4px #E2DCDD ridge;
+        background-color: #0B0615;
+        background-image: linear-gradient(0deg, #0B0615, 70%, #3c3548);
+                border-top: 4px #DCEAFF ridge;
                     /*box-shadow: 0px 0px 6px #000;*/
 }
 
@@ -86,7 +87,7 @@ footer {
                         font-size: 12px;
                         letter-spacing: 2px;
                         text-decoration: none;
-                            color:#689D81;
+                            color:#DCEAFF55;
                 }
                 
                     nav a:hover {
@@ -112,7 +113,7 @@ footer {
                 font-weight: lighter;
                 font-size: 24px;
                 letter-spacing: 2px;
-                    color: #F0A56C;
+                    color: #869DBFbb;
         }
 
 
@@ -122,11 +123,20 @@ footer {
 main {
     width: 960px;
     position: relative;
-    top: 120px;
-        background-color: #63545625;
+    top: 110px;
 }
 
-    .lesson {}
+    .lesson {
+        border-top: 10px #130A23 solid;
+    }
+
+        .backing {
+            width: 956px;
+            height: 80px;
+            margin-left: 2px;
+            position: absolute;
+                background-color: #784033;
+        }
 
         .lesson hgroup {
             display: flex;
@@ -134,50 +144,61 @@ main {
             align-items: flex-end;
             top: 120px;
             z-index: 98;
-                background-color: #4D4246;
-                /*background-image: url(./headerBk.jpg);                
-                background-size: cover;*/
+                border-top: 3px #984f3f solid;
         }
 
             h2 {
-                margin: 3px 25px;
+                margin: 0 25px;
+                padding: 10px 20px;
                     font-family: overlock;
                     font-size: 36px;
                     font-weight: lighter;
-                        color: #E2DCDDBB;
+                        color: #39272a;
+                        background-color: #869DBF;
             }
 
             h6 {
-                margin: 3px 25px;
+                margin: 0 25px;
                 margin-left: auto;
+                margin-bottom: auto;
+                padding: 10px 20px;
                     font-family: overlock;
                     font-size: 14px;
                     font-weight: lighter;
                     letter-spacing: 2px;
-                        color: #E2DCDDBB;
+                        color: #DCEAFFBB;
+                        background-color: #869DBF;
             }
 
-        .list {
-            width: 940px;
-            margin: 0 auto;
-            padding-bottom: 20px;
+        .wrapper {
+            margin-left: 2px;
+            width: 956px;
+            padding-top: 13px;
+            background-color: #DCEAFF11;
         }
 
-            .orange { border-right: 1px #F0A56C dashed; }
-            .green { border-right: 1px #689D81 dashed; }
-            .pink { border-right: 1px #BC6B79 dashed; }
-
-            .entry {
-                display: flex;
-                flex-direction: row-reverse;
-                margin: 10px 0;
+            .list {
+                width: 940px;
+                margin: 0 auto;
+                padding-bottom: 55px;
             }
 
-                .child { width: 900px; }                
-                .grandchild { width: 860px; }
+            .topic { border-right: 1px #DCEAFF55 dashed; }
+
+                .entry {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    margin: 10px 0;
+                }
+
+                    .child { width: 900px; }                
+                    .grandchild { width: 860px; }
 
 .spacer {
+    width: 956px;
     height: 19px;
+    margin: 0 2px;
+    background-color: #DCEAFF11;
 }
 
 
@@ -191,13 +212,25 @@ main {
 }
 
     .heading {
+        box-sizing: content-box;
         width: 100%;
         display: flex;
     }
 
-        .orange .heading { background-color: #F0A56C; }
-        .green .heading { background-color: #689D81; }
-        .pink .heading { background-color: #BC6B79; }
+        .orange .heading {
+            background-color: #dfb891;
+                border-right: 2px #dfb891 solid;
+        }
+
+        .green .heading {
+            background-color: #B37343;
+                border-right: 2px #B37343 solid;
+        }
+
+        .pink .heading {
+            background-color: #984f3f;
+                border-right: 2px #984f3f solid;
+        }
 
         .drop {
             width: 40px;
@@ -221,9 +254,9 @@ main {
         margin-right: 50px;
     }
 
-    .orange .descrip { background-color: #F0A56C; }
-    .green .descrip { background-color: #689D81; }
-    .pink .descrip { background-color: #BC6B79; }
+    .orange .descrip { background-color: #dfb891; }
+    .green .descrip { background-color: #B37343; }
+    .pink .descrip { background-color: #984f3f; }
 
         .text {
             box-sizing: border-box;
@@ -235,7 +268,7 @@ main {
                     font-family: quicksand;
                     font-size: 12px;
                     letter-spacing: .3px;
-                        color: #E2DCDD;
+                        color: #DCEAFF;
             }
 
         .links {
@@ -283,17 +316,17 @@ main {
             margin: 0;
                 font-family: 'pt mono';
                 font-size: 12px;
-                    background-color: #110E0F;
+                    background-color: #0B0615;
         }
 
             .code li {
-                    color: #E2DCDD;
-                    background-color: #161314;
+                    color: #DCEAFF;
+                    background-color: #130A23;
             }
 
     .outHead {
         height: 45px;
-            background-color: #E2DCDD;
+            background-color: #DCEAFF;
     }
 
     h4 {
