@@ -27,7 +27,7 @@ footer {
     z-index: 100;
             background-color: #0B0615;
                 border-top: 4px #DCEAFF ridge;
-                    /*box-shadow: 0px 0px 6px #000;*/
+                    box-shadow: 0px 0px 6px #000;
 }
 
     nav {
@@ -53,7 +53,7 @@ footer {
             
                 nav a:hover {
                     color: #B37343;
-                        /*text-shadow: 0 0 5px #c9bbbd;*/
+                        text-shadow: 0 0 5px #c1796f;
                 }
 
     .site-title {
@@ -64,22 +64,14 @@ footer {
                 border-right: 4px #DCEAFFAA double;
     }
 
-        footer h1 {        
+        footer h1 {
+            font-family: 'fredericka the great';
             font-weight: lighter;
             font-size: 24px;
             line-height: 6px;
             letter-spacing: 2px;
+                color: #869dbf;
         }
-
-            .site-title a {
-                font-family: 'fredericka the great';
-                text-decoration: none;
-                    color: #869dbf;
-            }
-
-                .site-title a:hover {
-                    color: #784033;
-                }
 
 
 
@@ -97,6 +89,8 @@ header {
         background-color: #39272a;
         background-image: url(./headerBk.jpg);
         background-size: cover;
+            border-bottom: 3px #c1796f ridge;
+                box-shadow: 0 3px 6px #0006;
 }
 
     h1 {
@@ -133,6 +127,7 @@ main {
                     border: #0004 solid;
                     border-width: 1.5px 1px;
                     border-bottom: 3px #3d2020 solid;
+                        box-shadow: 0 6px 6px #0004;
         }
 
         .lesson hgroup {
@@ -156,6 +151,7 @@ main {
                             border: 2px #3d2020 solid;
                             border-top: none;
                             border-radius: 0 0 15px 15px;
+                                box-shadow: 4px 4px 6px #0007;
             }
 
             h6 {
@@ -173,6 +169,7 @@ main {
                             border: 2px #3d2020 solid;
                             border-top: none;
                             border-radius: 0 0 15px 15px;
+                                box-shadow: 4px 4px 6px #0007;
             }
 
         .wrapper {
@@ -319,8 +316,6 @@ main {
                     letter-spacing: .5px;
                         color: #0007;
             }
-
-                .links li {}
 
 
 
