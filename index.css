@@ -155,10 +155,23 @@ main {
             }
 
             h6 {
-                margin: 0 37px;
-                margin-left: auto;
-                margin-bottom: auto;
+                margin: 0 37px auto auto;
                 padding: 10px 20px;
+                    font-size: 14px;
+                        color: #ffdcdcbb;
+                        background-color: #a95a48;
+                        background-image: linear-gradient(0deg, #ad6857, #a95a48, 70%,#3a1515);
+                            border: 2px #3d2020 solid;
+                            border-top: none;
+                            border-radius: 0 0 15px 15px;
+                                box-shadow: 4px 4px 6px #0007;
+            }
+
+            .top {
+                position: relative;
+                margin: 0 37px 0 10px;
+                top: -34px;
+                padding: 5px 20px 0 20px;
                     font-family: overlock;
                     font-size: 14px;
                     font-weight: lighter;
@@ -171,6 +184,10 @@ main {
                             border-radius: 0 0 15px 15px;
                                 box-shadow: 4px 4px 6px #0007;
             }
+
+                .top:hover {
+                    color: #461a1a;
+                }
 
         .wrapper {
             margin-left: 2px;
