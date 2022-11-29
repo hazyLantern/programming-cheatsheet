@@ -11,13 +11,14 @@ body {
     margin: 0;
     z-index: -2;
         background-color: #784033;
-        background-image: linear-gradient(180deg, #0B0615, #784033, #dfb891);
+        background-image: linear-gradient(180deg, #0B0615, #784033, #e0b386);
         background-attachment: fixed;
 }
 
 
 
 /* Footer --------------------------------------------------------------------------------------------------- */
+
 footer {
     width: 100%;
     height: 44px;
@@ -29,6 +30,23 @@ footer {
                 border-top: 4px #DCEAFF ridge;
                     box-shadow: 0px 0px 6px #000;
 }
+
+    .site-title {
+        display: inline-block;
+        padding: 2px 30px;
+            background-color: #0B0615;
+            background-image: linear-gradient(0deg, #0B0615, 10%, #0B0615, 75%, #494057);
+                border-right: 4px #DCEAFFAA double;
+    }
+
+        footer h1 {
+            font-family: 'fredericka the great';
+            font-weight: lighter;
+            font-size: 24px;
+            line-height: 6px;
+            letter-spacing: 2px;
+                color: #869dbf;
+        }
 
     nav {
         display: inline-block;
@@ -56,22 +74,6 @@ footer {
                         text-shadow: 0 0 5px #c1796f;
                 }
 
-    .site-title {
-        display: inline-block;
-        padding: 2px 30px;
-            background-color: #0B0615;
-            background-image: linear-gradient(0deg, #0B0615, 10%, #0B0615, 75%, #494057);
-                border-right: 4px #DCEAFFAA double;
-    }
-
-        footer h1 {
-            font-family: 'fredericka the great';
-            font-weight: lighter;
-            font-size: 24px;
-            line-height: 6px;
-            letter-spacing: 2px;
-                color: #869dbf;
-        }
 
 
 
@@ -110,8 +112,35 @@ header {
 main {
     width: 960px;
     position: relative;
-    top: 110px;
+    top: 120px;
 }
+
+    .contents {
+        display: flex;
+        justify-content: center;
+            margin: 0;
+            background-color: #0B0615;
+            background-image: linear-gradient(0deg, #0B0615, 10%, #0B0615, 75%, #494057);
+                border-top: 3px #c1796f ridge;
+    }
+
+        .contents table {
+            padding-top: 5px;
+            border-spacing: 25px;
+        }
+
+            .contents td {
+                width: 150px;
+                padding: 5px 2px;
+                    text-align: center;
+                    vertical-align: middle;
+                    font-family: 'fredericka the great';
+                    font-weight: lighter;
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                    color: #DCEAFF;
+                    background-color: #869dbf;
+            }
 
     .lesson {
         border-top: 10px #0B0615 solid;
@@ -151,7 +180,7 @@ main {
                             border: 2px #3d2020 solid;
                             border-top: none;
                             border-radius: 0 0 15px 15px;
-                                box-shadow: 4px 4px 6px #0007;
+                                box-shadow: 4px 4px 6px #0007, inset 2px 3px 6px #0B061588, inset -1px -2px 6px #dfb89155;
             }
 
             h6 {
@@ -164,7 +193,7 @@ main {
                             border: 2px #3d2020 solid;
                             border-top: none;
                             border-radius: 0 0 15px 15px;
-                                box-shadow: 4px 4px 6px #0007;
+                                box-shadow: 4px 4px 6px #0007, inset 2px 3px 6px #0B061588, inset -1px -2px 6px #dfb89155;
             }
 
             .top {
@@ -182,7 +211,7 @@ main {
                             border: 2px #3d2020 solid;
                             border-top: none;
                             border-radius: 0 0 15px 15px;
-                                box-shadow: 4px 4px 6px #0007;
+                                box-shadow: 4px 4px 6px #0007, inset 2px 3px 6px #0B061588, inset -1px -2px 6px #dfb89155;
             }
 
                 .top:hover {
@@ -211,8 +240,10 @@ main {
 
                 .entry {
                     display: flex;
-                    flex-direction: row-reverse;
+                    flex-direction: row;
                     margin: 10px 0;
+                        border-top-left-radius: 6px;
+                        border-bottom-left-radius: 6px;
                 }
 
                     .child { width: 900px; }                
@@ -236,6 +267,7 @@ main {
     display: flex;
     flex-direction: column;
         border-inline-start: 4px solid;
+            box-shadow: -5px 0 3px -3px #0007;
 }
 
     .orange .info { border-color: #B37343; }
@@ -248,6 +280,7 @@ main {
         display: flex;
             border-top-right-radius: 4px;
             border-bottom-right-radius: 2px;
+                box-shadow: 2px 2px 3px #0007;
     }
 
         .orange .heading {
@@ -287,6 +320,7 @@ main {
         margin-right: 50px;
             border-left: 1.5px #0004 solid;
             border-bottom-right-radius: 5px;
+                box-shadow: 2px 2px 3px #0007;
     }
 
         .orange .descrip { background-color: #B37343; }
@@ -342,11 +376,18 @@ main {
     width: 60%;
     display: flex;
     flex-direction: column;
+        border-width: 2px 0 2px 2px;
+        border-style: solid;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+            box-shadow: 6px 2px 3px #0007;
 }
 
+    .orange .example { border-color: #B37343 ;}
+    .blue .example { border-color: #869dbf ;}
+    .cream .example { border-color: #dfb891 ;}
+
     .code {
-        display: flex;
-        flex-direction: column;
     }
 
         .code ol {
@@ -355,12 +396,13 @@ main {
                 font-size: 12px;
                     background-color: #0B0615;
                         border-top-left-radius: 6px;
+                            box-shadow: inset -2px -2px 3px #0007, inset 2px 2px 3px #0007, inset 0 -50px 50px -50px #FFF5;
         }
 
             .code li {
                 padding-left: 4px;
                     color: #869dbf55;
-                    background-color: #130A23;
+                    background-color: #8649ee11;
             }
 
                 .first { padding-top: 6px; }
@@ -369,33 +411,41 @@ main {
 
     .outHead {
         height: 45px;
+        z-index: 8;
             background-color: #DCEAFF;
-                border-bottom: 2px #0006 solid;
+                box-shadow: inset 3px 0 3px -2px #0007, inset -3px 0 3px -2px #0007;
     }
+
+    .orange .outHead { background-color: #9b643a; }
+    .blue .outHead { background-color: #7488a6; }
+    .cream .outHead { background-color: #c19f7e; }
 
     h4 {
         margin: 5px;
         margin-left: 25px;
             font-family: quicksand;
+            font-weight: lighter;
             font-size: 18px;
             letter-spacing: 3px;
-                color: #869dbfDD;
+                color: #FFFB;
     }
 
     .output {
         height: 100%;
         margin: 0;
         padding: 0 10px;
+        z-index: 5;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
                 color: #000;
                 background-color: #FFF;
                     border-bottom-left-radius: 6px;
+                        box-shadow: inset -2px -2px 3px #0007, inset 2px 2px 3px #0007;
     }
 
 
 
-/* Text Colors -------------------------------------------------------------------------------------------- */
+/* Code Colors -------------------------------------------------------------------------------------------- */
 
 .dark-txt { color: #461a1a }
 .brown-txt { color: #784033; }
