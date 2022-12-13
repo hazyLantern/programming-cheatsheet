@@ -112,7 +112,7 @@ header {
 main {
     width: 960px;
     position: relative;
-    top: 120px;
+    top: 110px;
 }
 
     .contents {
@@ -258,6 +258,13 @@ main {
             border-width: 0 1px;
 }
 
+.jumplink {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: -121px;
+}
+
 
 
 /* Entry Info --------------------------------------------------------------------------------------------- */
@@ -306,7 +313,7 @@ main {
 
         h3 {
             margin: 10px;
-            margin-left: 0;
+            margin-left: 10px;
                 font-family: overlock;
                 font-size: 24px;
                 letter-spacing: 1.5px;
@@ -386,9 +393,6 @@ main {
     .orange .example { border-color: #B37343 ;}
     .blue .example { border-color: #869dbf ;}
     .cream .example { border-color: #dfb891 ;}
-
-    .code {
-    }
 
         .code ol {
             margin: 0;
